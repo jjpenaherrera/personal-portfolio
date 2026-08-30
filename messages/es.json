@@ -1,0 +1,82 @@
+{
+  "nav": {
+    "work": "Trabajo",
+    "perspective": "Perspectiva",
+    "skills": "Habilidades",
+    "contact": "Contacto",
+    "cta": "Escríbeme",
+    "menu": "Menú"
+  },
+  "hero": {
+    "eyebrow": "JUAN JOSÉ PEÑAHERRERA",
+    "h1": "Pensamiento de producto, <em>construido y lanzado con IA.</em>",
+    "lede": "Analizo los problemas como analista, priorizo como product manager, y entrego yo mismo el producto funcional cuando eso hace que las cosas avancen más rápido. La IA es la capa de ejecución.",
+    "statusLive": "activo,",
+    "chipsLabel": "Una persona, tres lentes",
+    "chip1": "Product Manager",
+    "chip2": "Product Analyst",
+    "chip3": "AI Builder",
+    "panelLive": "demo en vivo",
+    "panelNote": "Datos de demo, no es asesoría financiera",
+    "metric1": "Portafolio",
+    "metric2": "Riesgo",
+    "metric3": "24h"
+  },
+  "work": {
+    "eyebrow": "Trabajo seleccionado",
+    "h2": "Construcciones de punta a punta, una todavía en progreso.",
+    "lede": "Un dashboard de fintech, una app de salud personal, una plataforma en producción para un cliente real y un proyecto de competencia, cada uno construido de principio a fin. Más un discovery todavía en progreso, donde corrí los números antes de escribir una sola línea de código. Abre cualquier tarjeta para ver la historia completa.",
+    "discoveryLabel": "Y una todavía en progreso",
+    "viewDetails": "Ver detalle",
+    "viewDemo": "Ver demo",
+    "close": "Cerrar"
+  },
+  "perspective": {
+    "eyebrow": "Cómo trabajo",
+    "h2": "Descubrir, decidir, construir, lanzar.",
+    "lede": "La mayoría del trabajo de producto falla en el handoff, no en la idea. Me quedo a cargo desde la primera conversación con un usuario hasta el build desplegado, y la IA es lo que me permite cerrar ese ciclo yo mismo cuando la velocidad importa.",
+    "a1t": "Descubrir",
+    "a1d": "Hablo con usuarios, leo los datos, encuentro el problema real antes de proponer una solución.",
+    "a2t": "Decidir",
+    "a2d": "Priorizo con un método claro y una definición de terminado clara, no con la voz más ruidosa del cuarto.",
+    "a3t": "Construir",
+    "a3d": "Prototipo rápido. Lo construyo yo mismo cuando eso pone algo real frente a los usuarios más rápido, con la IA escribiendo el código.",
+    "a4t": "Lanzar",
+    "a4d": "Lanzo, mido, itero. Una versión entregada le gana a una presentación perfecta, siempre."
+  },
+  "skills": {
+    "eyebrow": "Qué aporto",
+    "h2": "Del rumbo a la entrega.",
+    "lede": "Convierto la ambigüedad en un rumbo claro, y ese rumbo en un producto que la gente usa de verdad.",
+    "direction": "Rumbo",
+    "delivery": "Entrega",
+    "d1": "Encuentro oportunidades reales en la investigación de usuarios y de mercado",
+    "d2": "Convierto esos hallazgos en un roadmap priorizado",
+    "d3": "Escribo PRDs y specs que el equipo puede construir sin adivinar",
+    "d4": "Alineo a los stakeholders alrededor de una sola decisión clara",
+    "d5": "Baso las decisiones en datos, no en suposiciones",
+    "d6": "Defino las métricas que dicen si funcionó",
+    "s1": "Construyo productos AI-native con frameworks web modernos",
+    "s2": "Uso Claude Code, Codex, Gemini y otras herramientas de IA para construir más rápido, no solo para conversar",
+    "s3": "Diseño prompts e integro APIs de IA en funcionalidades reales",
+    "s4": "Prototipo rápido, pruebo, e itero sin depender de una cola de desarrollo",
+    "s5": "Despliego experiencias listas para producción",
+    "s6": "Llevo una idea a producto en vivo yo mismo, cuando eso hace que las cosas avancen más rápido"
+  },
+  "contact": {
+    "eyebrow": "Hablemos",
+    "h2": "Construyamos algo.",
+    "lede": "Con gusto converso sobre roles de Product Manager, Product Analyst o AI Builder.",
+    "cv": "Solicitar mi CV",
+    "cvSubject": "Solicitud de CV",
+    "cvBody": "Hola Juan Jose, me gustaria solicitar tu CV (version en espanol).",
+    "email": "Correo",
+    "whatsapp": "WhatsApp",
+    "whatsappText": "Hola Juan Jose, vi tu portafolio y me gustaria conversar sobre nuevas oportunidades.",
+    "github": "GitHub",
+    "linkedin": "LinkedIn"
+  },
+  "footer": {
+    "name": "Juan José Peñaherrera"
+  }
+}

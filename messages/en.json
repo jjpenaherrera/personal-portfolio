@@ -1,0 +1,82 @@
+{
+  "nav": {
+    "work": "Work",
+    "perspective": "Perspective",
+    "skills": "Skills",
+    "contact": "Contact",
+    "cta": "Say hello",
+    "menu": "Menu"
+  },
+  "hero": {
+    "eyebrow": "JUAN JOSÉ PEÑAHERRERA",
+    "h1": "Product thinking, <em>built and shipped with AI.</em>",
+    "lede": "I scope problems like an analyst, prioritize like a product manager, and ship the working product myself when that's what moves things faster. AI is the execution layer.",
+    "statusLive": "live,",
+    "chipsLabel": "One person, three lenses",
+    "chip1": "Product Manager",
+    "chip2": "Product Analyst",
+    "chip3": "AI Builder",
+    "panelLive": "live demo",
+    "panelNote": "Demo data, not financial advice",
+    "metric1": "Portfolio",
+    "metric2": "Risk score",
+    "metric3": "24h"
+  },
+  "work": {
+    "eyebrow": "Selected work",
+    "h2": "Builds end to end, one still in progress.",
+    "lede": "A fintech dashboard, a personal health app, a live platform for a real client, and a competition build, each one shipped start to finish. Plus one discovery still in progress, where I ran the numbers before writing a single line of code. Open any card for the full story.",
+    "discoveryLabel": "And one still in progress",
+    "viewDetails": "View details",
+    "viewDemo": "View demo",
+    "close": "Close"
+  },
+  "perspective": {
+    "eyebrow": "How I work",
+    "h2": "Discover, decide, build, ship.",
+    "lede": "Most product work fails at the handoff, not the idea. I stay on the hook from the first user conversation to the deployed build, and AI is what lets me close that loop myself when speed matters.",
+    "a1t": "Discover",
+    "a1d": "Talk to users, read the data, find the real problem before proposing a solution.",
+    "a2t": "Decide",
+    "a2d": "Prioritize with a clear method and a clear definition of done, not the loudest voice in the room.",
+    "a3t": "Build",
+    "a3d": "Prototype fast. I build it myself when that gets something real in front of users sooner, with AI doing the typing.",
+    "a4t": "Ship",
+    "a4d": "Launch, measure, iterate. A shipped version beats a perfect deck every time."
+  },
+  "skills": {
+    "eyebrow": "What I bring",
+    "h2": "From direction to delivery.",
+    "lede": "I turn ambiguity into a clear direction, then into a product people actually use.",
+    "direction": "Direction",
+    "delivery": "Delivery",
+    "d1": "Find real opportunities in user and market research",
+    "d2": "Turn insights into a prioritized roadmap",
+    "d3": "Write PRDs and specs teams can build from",
+    "d4": "Align stakeholders around one clear decision",
+    "d5": "Base decisions on data, not assumptions",
+    "d6": "Define the metrics that tell you if it worked",
+    "s1": "Build AI-native products with modern web frameworks",
+    "s2": "Direct Claude Code, Codex, Gemini, and other AI tools to build faster, not just chat",
+    "s3": "Design prompts and wire AI APIs into real features",
+    "s4": "Prototype fast, test, and iterate without a dev queue",
+    "s5": "Ship production-ready experiences",
+    "s6": "Take an idea to a live product myself, when that's what moves things faster"
+  },
+  "contact": {
+    "eyebrow": "Get in touch",
+    "h2": "Let's build something.",
+    "lede": "Always glad to talk about Product Manager, Product Analyst, or AI Builder work.",
+    "cv": "Request my CV",
+    "cvSubject": "CV request",
+    "cvBody": "Hi Juan Jose, I'd like to request your CV (English version).",
+    "email": "Email",
+    "whatsapp": "WhatsApp",
+    "whatsappText": "Hi Juan Jose, I saw your portfolio and would like to talk about new opportunities.",
+    "github": "GitHub",
+    "linkedin": "LinkedIn"
+  },
+  "footer": {
+    "name": "Juan José Peñaherrera"
+  }
+}

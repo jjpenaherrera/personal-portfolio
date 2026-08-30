@@ -227,6 +227,7 @@ button {
   padding: 12px 0;
   border-bottom: 1px solid var(--line);
   display: block;
+  text-align: center;
 }
 .mobile-nav a:last-child {
   border-bottom: none;
@@ -875,14 +876,6 @@ h2 {
   .instrument {
     grid-template-columns: 1fr;
   }
-  .astep {
-    padding-right: 0;
-    text-align: center;
-  }
-  .astep p {
-    margin-left: auto;
-    margin-right: auto;
-  }
 }
 .instrument::before {
   content: "";
@@ -937,6 +930,16 @@ h2 {
   font-size: 0.9rem;
   margin: 0;
   max-width: 26ch;
+}
+@media (max-width: 480px) {
+  .astep {
+    padding-right: 0;
+    text-align: center;
+  }
+  .astep p {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 /* ---------- Skills ---------- */

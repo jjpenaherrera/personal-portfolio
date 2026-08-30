@@ -146,7 +146,7 @@ button {
     backdrop-filter: none;
   }
 }
-.nav .wrap {
+.nav > .wrap {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -869,6 +869,14 @@ h2 {
 @media (max-width: 480px) {
   .instrument {
     grid-template-columns: 1fr;
+  }
+  .astep {
+    padding-right: 0;
+    text-align: center;
+  }
+  .astep p {
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 .instrument::before {

@@ -5,6 +5,8 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { Analytics } from "@vercel/analytics/next";
 import { routing } from "@/i18n/routing";
+import { siteUrl } from "@/lib/site";
+import { StructuredData } from "@/components/StructuredData";
 import "../globals.css";
 
 const fraunces = Fraunces({
@@ -33,6 +35,16 @@ export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
 }
 
+const titles: Record<string, string> = {
+  en: "Juan José Peñaherrera · AI Product Builder & Product Manager",
+  es: "Juan José Peñaherrera · AI Product Builder y Product Manager",
+};
+
+const ogLocales: Record<string, string> = {
+  en: "en_US",
+  es: "es_EC",
+};
+
 export async function generateMetadata({
   params,
 }: {
@@ -40,9 +52,42 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "hero" });
+  const description = t("lede").replace(/<[^>]+>/g, "");
+  const title = titles[locale] ?? titles[routing.defaultLocale];
+  const path = `/${locale}`;
+  const languages = Object.fromEntries(
+    routing.locales.map((l) => [l, `/${l}`])
+  );
+  languages["x-default"] = `/${routing.defaultLocale}`;
+
   return {
-    title: "Juan José Peñaherrera",
-    description: t("lede").replace(/<[^>]+>/g, ""),
+    metadataBase: new URL(siteUrl),
+    title,
+    description,
+    alternates: {
+      canonical: path,
+      languages,
+    },
+    robots: {
+      index: true,
+      follow: true,
+    },
+    openGraph: {
+      type: "profile",
+      url: path,
+      siteName: "Juan José Peñaherrera",
+      title,
+      description,
+      locale: ogLocales[locale] ?? ogLocales[routing.defaultLocale],
+      alternateLocale: routing.locales
+        .filter((l) => l !== locale)
+        .map((l) => ogLocales[l] ?? ogLocales[routing.defaultLocale]),
+    },
+    twitter: {
+      card: "summary",
+      title,
+      description,
+    },
   };
 }
 
@@ -62,6 +107,7 @@ export default async function LocaleLayout({
   return (
     <html lang={locale} className={`${fraunces.variable} ${ibmPlexSans.variable} ${ibmPlexMono.variable}`}>
       <body>
+        <StructuredData locale={locale as "en" | "es"} />
         <NextIntlClientProvider>{children}</NextIntlClientProvider>
         <Analytics />
       </body>

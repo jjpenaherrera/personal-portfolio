@@ -26,7 +26,7 @@ export async function Perspective() {
           {steps.map((s) => (
             <Reveal as="div" className="astep" key={s.n} ty={18} dur={420} delay={s.delay}>
               <span className="n">{s.n}</span>
-              <h4>{s.t}</h4>
+              <h3>{s.t}</h3>
               <p>{s.d}</p>
             </Reveal>
           ))}

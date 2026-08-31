@@ -11,6 +11,7 @@ export async function Hero() {
           <p className="eyebrow">{t("eyebrow")}</p>
           <h1 dangerouslySetInnerHTML={{ __html: t.raw("h1") }} />
           <p className="lede">{t("lede")}</p>
+          <p className="chips-label">{t("positioningTag")}</p>
           <p className="status-line">
             <span className="status-dot" aria-hidden="true" />
             <span>{t("statusLive")}</span>

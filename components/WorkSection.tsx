@@ -2,9 +2,18 @@
 
 import { useEffect, useRef, useState } from "react";
 import { useLocale, useTranslations } from "next-intl";
-import { projects, discoveryProject, type Project, type Locale } from "@/lib/projects";
+import { projects, discoveryProject, type Project, type ProjectContent, type Locale } from "@/lib/projects";
 import { ProjectIcon } from "./ProjectIcons";
 import { Reveal } from "./Reveal";
+
+function ProjectStepsStatic({ content }: { content: ProjectContent }) {
+  return (
+    <span className="sr-only">
+      {content.title}. {content.dek}{" "}
+      {content.steps.map((s) => `${s.t}: ${s.d}`).join(" ")}
+    </span>
+  );
+}
 
 function ProjectTile({
   project,
@@ -36,6 +45,7 @@ function ProjectTile({
         {status ? <span className="tile-status">{status}</span> : null}
         <span className="tile-cta">{t("viewDetails")} →</span>
       </Reveal>
+      <ProjectStepsStatic content={c} />
     </button>
   );
 }
@@ -69,6 +79,7 @@ function DiscoveryStrip({
         {status ? <span className="tile-status">{status}</span> : null}
         <span className="tile-cta">{t("viewDetails")} →</span>
       </Reveal>
+      <ProjectStepsStatic content={c} />
     </button>
   );
 }

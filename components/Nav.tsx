@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import { useLocale, useTranslations } from "next-intl";
 import { Link, usePathname } from "@/i18n/navigation";
+import { ThemeToggle } from "./ThemeToggle";
 
 export function Nav() {
   const t = useTranslations("nav");
@@ -39,6 +40,7 @@ export function Nav() {
           ))}
         </ul>
         <div className="navright">
+          <ThemeToggle />
           <div className="langtoggle" role="group" aria-label="Language">
             <Link href={pathname} locale="en" aria-current={locale === "en"}>
               EN

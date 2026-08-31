@@ -5,7 +5,9 @@
     "skills": "Habilidades",
     "contact": "Contacto",
     "cta": "Escríbeme",
-    "menu": "Menú"
+    "menu": "Menú",
+    "themeLight": "Cambiar a modo claro",
+    "themeDark": "Cambiar a modo oscuro"
   },
   "hero": {
     "eyebrow": "JUAN JOSÉ PEÑAHERRERA",

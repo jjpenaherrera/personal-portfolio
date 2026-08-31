@@ -244,6 +244,19 @@ button {
 .mobile-nav a:last-child {
   border-bottom: none;
 }
+.theme-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--line-strong);
+  background: transparent;
+  color: var(--ink);
+  border-radius: 999px;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  flex: none;
+}
 .langtoggle {
   display: inline-flex;
   border: 1px solid var(--line-strong);
@@ -272,6 +285,7 @@ button {
 .navlinks a:focus-visible,
 .mobile-nav a:focus-visible,
 .navtoggle:focus-visible,
+.theme-toggle:focus-visible,
 .btn:focus-visible,
 .disclosure-btn:focus-visible,
 .tile:focus-visible,

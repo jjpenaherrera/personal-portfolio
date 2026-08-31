@@ -105,7 +105,19 @@ export default async function LocaleLayout({
   setRequestLocale(locale);
 
   return (
-    <html lang={locale} className={`${fraunces.variable} ${ibmPlexSans.variable} ${ibmPlexMono.variable}`}>
+    <html
+      lang={locale}
+      className={`${fraunces.variable} ${ibmPlexSans.variable} ${ibmPlexMono.variable}`}
+      suppressHydrationWarning
+    >
+      <head>
+        <script
+          dangerouslySetInnerHTML={{
+            __html:
+              "(function(){try{var t=localStorage.getItem('theme');if(t==='light'||t==='dark'){document.documentElement.setAttribute('data-theme',t);}}catch(e){}})();",
+          }}
+        />
+      </head>
       <body>
         <StructuredData locale={locale as "en" | "es"} />
         <NextIntlClientProvider>{children}</NextIntlClientProvider>

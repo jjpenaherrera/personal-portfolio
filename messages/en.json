@@ -5,7 +5,9 @@
     "skills": "Skills",
     "contact": "Contact",
     "cta": "Say hello",
-    "menu": "Menu"
+    "menu": "Menu",
+    "themeLight": "Switch to light mode",
+    "themeDark": "Switch to dark mode"
   },
   "hero": {
     "eyebrow": "JUAN JOSÉ PEÑAHERRERA",

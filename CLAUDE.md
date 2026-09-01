@@ -32,9 +32,9 @@ corrigió explícitamente varias frases que sonaban así.
 
 ## Decisiones de producto y contenido (confirmadas)
 
-- **Cinco proyectos en la sección Work, todos con contenido real (ya no hay restricción de
+- **Siete proyectos en la sección Work, todos con contenido real (ya no hay restricción de
   "no inventar copy sin aprobación" — el usuario aprobó explícitamente avanzar con los 4 que
-  antes estaban bloqueados):**
+  antes estaban bloqueados, y luego sumó Rhomus y PR-Abogados):**
   1. **InvestIQ** — Investment Intelligence Dashboard. Fintech, 7 vistas, demo pública:
      https://investiq-v2.vercel.app/dashboard. Proyecto fuente:
      `../complete-course/Investment Intelligence Dashboard` (repo separado del usuario).
@@ -51,11 +51,19 @@ corrigió explícitamente varias frases que sonaban así.
      de Coderhouse. Cliente/caso de uso real: Pamela (docente universitaria, permiso escrito para
      usar su material). Demo pública: https://catedra-examenes.vercel.app. Proyecto fuente:
      `../CoderCup`.
-  5. **Customer Retention Platform** — NO es un build, es un caso de estudio de **criterio de
+  5. **Rhomus** — sitio institucional para **Rhombus ISCP** (firma de seguridad privada de alto
+     perfil en Guayaquil: protección ejecutiva, seguridad corporativa, eventos, protección armada).
+     Cliente real, trabajo freelance. Demo pública: https://rhombus-security.vercel.app/. Next.js
+     en Vercel. Sin repo público confirmado (no está en el GitHub del usuario).
+  6. **PR-Abogados** — sitio institucional para **Peñaherrera Romero & Asociados**, estudio
+     jurídico ecuatoriano (penal y constitucional), Guayaquil con red en Quito/Cuenca. Cliente
+     real, trabajo freelance. Demo pública: https://pr-abogados-ec.vercel.app/. Next.js en Vercel.
+     Sin repo público confirmado (no está en el GitHub del usuario).
+  7. **Customer Retention Platform** — NO es un build, es un caso de estudio de **criterio de
      producto**: discovery cerrado el 17-ago-2026 al confirmar que la tesis de negocio original no
      pasaba unit economics. Se presenta con status "In progress" (hay una tesis alternativa sin
      validar), nunca como "cancelado". En el sitio va como una franja horizontal distinta debajo
-     de la grilla de los 4 builds, no como una tarjeta más — así no se ve como un "sobrante".
+     de la grilla de los 6 builds, no como una tarjeta más — así no se ve como un "sobrante".
 - Bilingüe ES/EN con toggle real — en el mockup con diccionario JS; en la implementación real se
   usa `next-intl` con rutas localizadas (`/es`, `/en`).
 - **Regla de copy no negociable:** cero guiones largos (—) en ningún texto, en ningún idioma.
@@ -63,7 +71,7 @@ corrigió explícitamente varias frases que sonaban así.
   de trabajo activa (el usuario tiene empleo 9-5 y no quiere que se note ahí). El status line del
   hero tampoco debe mencionar que el sitio se construyó con Claude Code u otra herramienta de IA.
 - Secciones del sitio: Hero (panel tipo dashboard, guiño a InvestIQ, con reloj en vivo GMT-5 como
-  detalle distintivo real, no decorativo) → Work (4 builds en grilla pareja + 1 franja de
+  detalle distintivo real, no decorativo) → Work (6 builds en grilla de 3x2 + 1 franja de
   discovery) → Perspective/Approach (Discover → Decide → Build → Ship) → Skills (columnas
   **"Direction / Delivery"**, ES "Rumbo / Entrega", no "Product/Build") → Contact.
 - Nav: wordmark **"JJPR"** (no "JJ · P").

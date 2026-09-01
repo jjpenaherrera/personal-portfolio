@@ -1,4 +1,4 @@
-export type IconName = "spark" | "ring" | "ledger" | "doc" | "stop";
+export type IconName = "spark" | "ring" | "ledger" | "doc" | "stop" | "shield" | "scale";
 
 export function ProjectIcon({ name }: { name: IconName }) {
   switch (name) {
@@ -83,6 +83,49 @@ export function ProjectIcon({ name }: { name: IconName }) {
             strokeLinecap="round"
             strokeDasharray="1 6"
           />
+        </svg>
+      );
+    case "shield":
+      return (
+        <svg viewBox="0 0 34 40" width="34" height="40" aria-hidden="true">
+          <path
+            d="M17 2 L31 8 V19 C31 28 25 34.5 17 38 C9 34.5 3 28 3 19 V8 Z"
+            fill="none"
+            stroke="var(--line-strong)"
+            strokeWidth="1.8"
+            strokeLinejoin="round"
+          />
+          <path
+            d="M11 19.5 L15.5 24 L24 13.5"
+            fill="none"
+            stroke="var(--accent)"
+            strokeWidth="2.2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          />
+        </svg>
+      );
+    case "scale":
+      return (
+        <svg viewBox="0 0 50 40" width="50" height="40" aria-hidden="true">
+          <line x1="25" y1="3" x2="25" y2="33" stroke="var(--line-strong)" strokeWidth="1.8" />
+          <line x1="9" y1="9" x2="41" y2="9" stroke="var(--line-strong)" strokeWidth="1.8" />
+          <rect x="19" y="33" width="12" height="4" rx="1.2" fill="none" stroke="var(--line-strong)" strokeWidth="1.6" />
+          <path
+            d="M9 9 L3 20 A6 6 0 0 0 15 20 Z"
+            fill="none"
+            stroke="var(--ink-soft)"
+            strokeWidth="1.6"
+            strokeLinejoin="round"
+          />
+          <path
+            d="M41 9 L35 20 A6 6 0 0 0 47 20 Z"
+            fill="none"
+            stroke="var(--accent-2)"
+            strokeWidth="1.6"
+            strokeLinejoin="round"
+          />
+          <circle cx="25" cy="6" r="2.4" fill="none" stroke="var(--accent)" strokeWidth="1.6" />
         </svg>
       );
   }

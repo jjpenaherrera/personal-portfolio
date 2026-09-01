@@ -12,7 +12,7 @@ export type ProjectContent = {
 export type Project = {
   id: string;
   cta: string | null;
-  icon: "spark" | "ring" | "ledger" | "doc" | "stop";
+  icon: "spark" | "ring" | "ledger" | "doc" | "stop" | "shield" | "scale";
   status: Record<Locale, string | null>;
   en: ProjectContent;
   es: ProjectContent;
@@ -128,6 +128,62 @@ export const projects: Project[] = [
         { t: "Enfoque", d: "Diseñé un flujo donde la materia se carga una sola vez y cada reactivo cita el texto y el autor exacto de donde sale, con un validador que revisa 7 criterios de calidad que la propia docente definió antes de mostrar cualquier pregunta." },
         { t: "Construcción", d: "Construí la app completa en Next.js con AI SDK y Claude, con 379 pruebas automatizadas corriendo sobre el generador, para competir en CoderCup, la competencia de IA de Coderhouse." },
         { t: "Resultado", d: "Hoy Cátedra genera exámenes reales para las materias de Pamela, con permiso suyo para mostrar su contenido en público, y con dos caminos de demo abiertos: uno con su materia real cargada y otro para subir cualquier material propio." },
+      ],
+    },
+  },
+  {
+    id: "rhomus",
+    cta: "https://rhombus-security.vercel.app/",
+    icon: "shield",
+    status: { en: null, es: null },
+    en: {
+      tags: ["Next.js", "Real client · Freelance", "Private security", "Marketing site"],
+      title: "Rhomus, a site built to earn trust before the first call",
+      dek: "A private security firm in Guayaquil needed a site that reads as discreet and professional to high-profile clients, with WhatsApp as the only front door.",
+      steps: [
+        { t: "Problem", d: "A firm offering executive protection and armed security had no web presence matching the seriousness of the service it sells." },
+        { t: "Approach", d: "Structured the site around the firm's four service lines, restraint over sales language, and one clear path to contact." },
+        { t: "Build", d: "Built and deployed the full site in Next.js on Vercel as a freelance engagement, from first draft to production." },
+        { t: "Outcome", d: "Live site for Rhombus ISCP, routing every inquiry straight to WhatsApp for a direct, confidential first conversation." },
+      ],
+    },
+    es: {
+      tags: ["Next.js", "Cliente real · Freelance", "Seguridad privada", "Sitio institucional"],
+      title: "Rhomus, un sitio construido para generar confianza antes de la primera llamada",
+      dek: "Una firma de seguridad privada en Guayaquil necesitaba un sitio que se leyera discreto y profesional frente a clientes de alto perfil, con WhatsApp como única puerta de entrada.",
+      steps: [
+        { t: "Problema", d: "Una firma que ofrece protección ejecutiva y seguridad armada no tenía presencia web a la altura de la seriedad del servicio que vende." },
+        { t: "Enfoque", d: "Estructuré el sitio alrededor de las cuatro líneas de servicio de la firma, con sobriedad en vez de lenguaje de venta, y un solo camino claro de contacto." },
+        { t: "Construcción", d: "Construí y desplegué el sitio completo en Next.js sobre Vercel como trabajo freelance, desde el primer borrador hasta producción." },
+        { t: "Resultado", d: "Sitio en vivo para Rhombus ISCP, que dirige cada consulta directo a WhatsApp para una primera conversación directa y confidencial." },
+      ],
+    },
+  },
+  {
+    id: "pr-abogados",
+    cta: "https://pr-abogados-ec.vercel.app/",
+    icon: "scale",
+    status: { en: null, es: null },
+    en: {
+      tags: ["Next.js", "Real client · Freelance", "Legal services", "Marketing site"],
+      title: "PR Abogados, a law firm's case for why they're the right call",
+      dek: "An Ecuadorian criminal and constitutional law firm needed a site to present its team, its practice areas, and a clear way to book a consultation.",
+      steps: [
+        { t: "Problem", d: "A firm with 18 years of practice in high-complexity criminal and constitutional cases had no site laying out its team and track record for someone deciding who to call." },
+        { t: "Approach", d: "Organized the site around the firm's practice areas, the three attorneys' profiles, and national coverage across Guayaquil, Quito, and Cuenca." },
+        { t: "Build", d: "Built and deployed the full site in Next.js on Vercel as a freelance engagement, including consultation booking and direct contact channels." },
+        { t: "Outcome", d: "Live site for Peñaherrera Romero & Asociados, giving prospective clients a clear path from the firm's case for itself to a booked consultation." },
+      ],
+    },
+    es: {
+      tags: ["Next.js", "Cliente real · Freelance", "Servicios legales", "Sitio institucional"],
+      title: "PR Abogados, el caso de un estudio jurídico para explicar por qué llamarlos a ellos",
+      dek: "Un estudio ecuatoriano de derecho penal y constitucional necesitaba un sitio para presentar a su equipo, sus áreas de práctica y una forma clara de agendar una consulta.",
+      steps: [
+        { t: "Problema", d: "Un estudio con 18 años de trayectoria en casos penales y constitucionales de alta complejidad no tenía un sitio que mostrara su equipo y trayectoria a quien estuviera decidiendo a quién llamar." },
+        { t: "Enfoque", d: "Organicé el sitio alrededor de las áreas de práctica del estudio, los perfiles de los tres abogados y la cobertura nacional entre Guayaquil, Quito y Cuenca." },
+        { t: "Construcción", d: "Construí y desplegué el sitio completo en Next.js sobre Vercel como trabajo freelance, incluyendo agendamiento de consultas y canales de contacto directo." },
+        { t: "Resultado", d: "Sitio en vivo para Peñaherrera Romero & Asociados, que le da a cada cliente potencial un camino claro desde el caso del estudio hasta una consulta agendada." },
       ],
     },
   },

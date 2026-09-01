@@ -34,7 +34,7 @@ corrigió explícitamente varias frases que sonaban así.
 
 - **Siete proyectos en la sección Work, todos con contenido real (ya no hay restricción de
   "no inventar copy sin aprobación" — el usuario aprobó explícitamente avanzar con los 4 que
-  antes estaban bloqueados, y luego sumó Rhomus y PR-Abogados):**
+  antes estaban bloqueados, y luego sumó Rhombus y PR-Abogados):**
   1. **InvestIQ** — Investment Intelligence Dashboard. Fintech, 7 vistas, demo pública:
      https://investiq-v2.vercel.app/dashboard. Proyecto fuente:
      `../complete-course/Investment Intelligence Dashboard` (repo separado del usuario).
@@ -51,7 +51,7 @@ corrigió explícitamente varias frases que sonaban así.
      de Coderhouse. Cliente/caso de uso real: Pamela (docente universitaria, permiso escrito para
      usar su material). Demo pública: https://catedra-examenes.vercel.app. Proyecto fuente:
      `../CoderCup`.
-  5. **Rhomus** — sitio institucional para **Rhombus ISCP** (firma de seguridad privada de alto
+  5. **Rhombus** — sitio institucional para **Rhombus ISCP** (firma de seguridad privada de alto
      perfil en Guayaquil: protección ejecutiva, seguridad corporativa, eventos, protección armada).
      Cliente real, trabajo freelance. Demo pública: https://rhombus-security.vercel.app/. Next.js
      en Vercel. Sin repo público confirmado (no está en el GitHub del usuario).

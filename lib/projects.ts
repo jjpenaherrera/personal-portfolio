@@ -132,13 +132,13 @@ export const projects: Project[] = [
     },
   },
   {
-    id: "rhomus",
+    id: "rhombus",
     cta: "https://rhombus-security.vercel.app/",
     icon: "shield",
     status: { en: null, es: null },
     en: {
       tags: ["Next.js", "Real client · Freelance", "Private security", "Marketing site"],
-      title: "Rhomus, a site built to earn trust before the first call",
+      title: "Rhombus, a site built to earn trust before the first call",
       dek: "A private security firm in Guayaquil needed a site that reads as discreet and professional to high-profile clients, with WhatsApp as the only front door.",
       steps: [
         { t: "Problem", d: "A firm offering executive protection and armed security had no web presence matching the seriousness of the service it sells." },
@@ -149,7 +149,7 @@ export const projects: Project[] = [
     },
     es: {
       tags: ["Next.js", "Cliente real · Freelance", "Seguridad privada", "Sitio institucional"],
-      title: "Rhomus, un sitio construido para generar confianza antes de la primera llamada",
+      title: "Rhombus, un sitio construido para generar confianza antes de la primera llamada",
       dek: "Una firma de seguridad privada en Guayaquil necesitaba un sitio que se leyera discreto y profesional frente a clientes de alto perfil, con WhatsApp como única puerta de entrada.",
       steps: [
         { t: "Problema", d: "Una firma que ofrece protección ejecutiva y seguridad armada no tenía presencia web a la altura de la seriedad del servicio que vende." },

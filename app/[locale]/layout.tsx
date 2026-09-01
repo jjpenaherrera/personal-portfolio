@@ -4,6 +4,7 @@ import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import { routing } from "@/i18n/routing";
 import { siteUrl } from "@/lib/site";
 import { StructuredData } from "@/components/StructuredData";
@@ -122,6 +123,7 @@ export default async function LocaleLayout({
         <StructuredData locale={locale as "en" | "es"} />
         <NextIntlClientProvider>{children}</NextIntlClientProvider>
         <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );

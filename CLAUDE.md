@@ -14,21 +14,22 @@ el copy público esto se enmarca siempre como una decisión de velocidad ("ship 
 that's what moves things faster"), nunca como "no tengo/no sé trabajar en equipo" — el usuario
 corrigió explícitamente varias frases que sonaban así.
 
-## Estado actual (2026-08-30)
+## Estado actual (2026-08-31)
 
-- **El mockup de UI quedó aprobado por el usuario en esta sesión.** Vive en un Claude Artifact
-  (HTML/CSS/JS estático, sin backend), iterado varias rondas:
-  https://claude.ai/code/artifact/32236f56-74e7-4b63-909c-bcb7600305ec
-  (el artifact anterior, `54411e4d...`, es la v1 descartada: paleta bronce/teal rechazada por el
-  usuario y estructura de "Work" con bento-grid genérico; no usar como referencia).
-- **Siguiente fase: scaffold real del proyecto Next.js + next-intl, y salida a producción en
-  Vercel.** Ya se puede levantar dev server y crear código de aplicación real.
-- **Decisión de dominio (revertida respecto al plan original):** NO se compra dominio propio.
-  Se usa un subdominio gratis de Vercel. Nombre elegido: probar primero
-  **`jjpenaherrera.vercel.app`**; si está tomado, usar **`jjpr.vercel.app`** como fallback (calza
-  con el wordmark de la nav, ver abajo). Más adelante se pondrá ese link detrás de un acortador
-  gratis en los puntos de contacto (bio de LinkedIn/Instagram, CV) para que no se note que es un
-  subdominio de Vercel ni que el hosting es gratuito.
+- **El sitio está construido y en producción.** Scaffold real completo: Next.js 16 (App Router) +
+  `next-intl`, tokens de diseño y motion portados del Artifact aprobado
+  (https://claude.ai/code/artifact/32236f56-74e7-4b63-909c-bcb7600305ec, ya no es la fuente de
+  verdad activa, solo referencia histórica), contenido de los 7 proyectos portado y ampliado.
+- **URL de producción:** `jjpenaherrera.vercel.app` (el nombre elegido en el plan original quedó
+  disponible, no hizo falta el fallback `jjpr.vercel.app`). Sin dominio propio comprado, según lo
+  decidido. Sigue pendiente el paso de ponerlo detrás de un acortador gratis en los puntos de
+  contacto (LinkedIn/Instagram/CV).
+- **Deploy:** el repo de GitHub (`jjpenaherrera/personal-portfolio`) está conectado al proyecto de
+  Vercel vía Git integration desde el 2026-08-31 — un `git push` a `main` dispara deploy automático
+  a producción. Antes de esa fecha los deploys eran manuales por CLI (`vercel --prod`); todavía es
+  válido usar ese comando para forzar un deploy inmediato sin esperar el webhook.
+- **Observabilidad:** `@vercel/analytics` y `@vercel/speed-insights` instalados y montados en
+  `app/[locale]/layout.tsx` (junto a `<Analytics />`, `<SpeedInsights />`).
 
 ## Decisiones de producto y contenido (confirmadas)
 
@@ -128,19 +129,16 @@ de cursor sutil en el preview de InvestIQ gateado a `(hover:hover) and (pointer:
 
 - Repo git **propio y aislado** en esta carpeta (rama `main`), creado 2026-08-30. No anidar este
   proyecto dentro de otro repo (ya se separó una vez del repo del `$HOME` del usuario).
+- Conectado a Vercel vía Git integration desde 2026-08-31 (ver "Estado actual"): push a `main` =
+  deploy a producción automático. Tener presente esto antes de pushear cambios a medio terminar.
 
 ## Pendiente de confirmación / próximos pasos
 
-1. Confirmar disponibilidad de `jjpenaherrera.vercel.app` al crear el proyecto en Vercel; si está
-   tomado, usar `jjpr.vercel.app`.
-2. Scaffold real: `next-intl` + App Router, portar tokens de diseño y motion del Artifact
-   aprobado, portar contenido de los 5 proyectos (texto ya redactado y aprobado, ver arriba).
-3. Deploy a Vercel (preview primero, luego producción).
-4. Elegir y configurar un acortador de links gratis para los puntos de contacto (bio de
+1. Elegir y configurar un acortador de links gratis para los puntos de contacto (bio de
    LinkedIn/Instagram, CV), apuntando al subdominio de Vercel.
-5. Pendiente del lado del usuario, no del agente: construir un camino de demo pública segura para
+2. Pendiente del lado del usuario, no del agente: construir un camino de demo pública segura para
    Condominio SaaS (hoy no existe; no hay botón "ver demo" para ese proyecto todavía).
-6. Confirmar si hay nombre de marca propio para Condominio SaaS (revisar `identidad-marca.md` del
+3. Confirmar si hay nombre de marca propio para Condominio SaaS (revisar `identidad-marca.md` del
    proyecto fuente, no leído en detalle todavía) y si InvestIQ realmente tiene 9 páginas en vez de
    7 (el copy actual dice 7 vistas, simplificación editorial ya aceptada, no cambiar sin pedir
    confirmación explícita).
